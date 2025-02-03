@@ -1,0 +1,216 @@
+#container-4{
+    width: 100%;
+    background-color:darkolivegreen;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+#inner-forth{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:60%;
+    gap: 20px;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis);
+}
+#first-div-head{
+    padding-bottom: 25px;
+}
+#purple-heading-span{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 42px;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#purple-heading-span span{
+    color: #4B0082;
+}
+.orange-span{
+    padding-left: 5px;
+}
+.orange-span span{
+    color:#E85D33;
+    font-weight: 700;
+}
+.option4 p{
+    color: black;
+}
+#inner-forth h2{
+    color:black;
+}
+
+.work-pillor4{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between; /* Distribute space evenly between items */
+    gap: 10px; 
+    height: 1140;
+    
+}
+.work-pillor4 .option4{
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 530px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.option4{
+    display: flex;
+    align-items: center;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.inner-option4{
+    display: flex;
+    flex-direction: column;
+}
+.inner-option4 h3{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.inner-option4 p{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Button Styles for .button-orange-4 */
+.button-orange-4 {
+    position: relative;
+    width: 440px; /* Width from the original code */
+    height: 90px; /* Height from the original code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the light effect stays within the button */
+  }
+  
+  .button-orange-4 button { 
+    background-color: #E85D33;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 28px;
+    font-weight: 700; /* Increased font-weight */
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%; /* Full width of parent div */
+    height: 100%;
+    position: relative;
+    animation: shakeEffect 1s ease-in-out infinite, pulseEffect 2s ease infinite, animatedgradient 3s ease infinite alternate;
+    background: linear-gradient(45deg, #FF8C00, #E85D33, #FF6347); /* Default gradient */
+    background-size: 400% 400%; /* Makes the gradient large enough to animate */
+  }
+  
+  /* Continuous to and fro animation */
+  @keyframes shakeEffect {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Light pulse effect */
+  @keyframes pulseEffect {
+    0% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  /* Animated gradient effect */
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Create the ray effect */
+  @keyframes rayEffect {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Bright Ray effect on button */
+  .button-orange-4 button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Bright white ray color */
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    animation: rayEffect 1s ease-in-out infinite; /* Reduced the duration for faster motion */
+    z-index: 1;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+  }
+  
+  /* Anchor and text styling */
+  .button-orange-4 a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  #button-orange-text-4 {
+    color: white;
+    text-align: center; /* Ensures text is centered */
+  }
+  
+#limited-seat-4{
+    margin-top:0;
+    margin-bottom: 0;
+    font-family: "Mukta", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+}

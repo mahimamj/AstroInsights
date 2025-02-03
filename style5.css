@@ -1,0 +1,243 @@
+#big-div5{
+    background-color: pink;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+    flex-shrink: 1;
+}
+#smalldiv-5{
+    background-color:darkred;
+    width: 500px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    padding-right: 20px;
+}
+#part5-img{
+    height: 590px;
+    width: 440px;
+}
+@media (max-width: 768px) {
+    #big-div5{
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+    #part5-img{
+        order: 1;  /* Content1 comes first */
+        flex-shrink:0.5;
+    }
+    
+    #smalldiv-5{
+        order: 2;  /* Content2 comes second */
+        flex-shrink: 1;
+    }
+    }
+#smalldiv-5{
+    #head1{
+        font-family: Bricolage Grotesque,Sans-serif;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 39px;
+        color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+#smalldiv-5{
+    #head2{
+        font-family: Bricolage Grotesque,Sans-serif;
+        color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 32px;
+    }
+}
+#smalldiv-5{
+    #para{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: "Outfit", Sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 27px;
+        color: #DCDCDC;
+    }
+}
+#element-icon-box-big{
+    display: flex;
+    gap: 20px;
+}
+.element-icon-box{
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    padding:7px ;
+    background-color: #69696942;
+    padding: 7px 7px 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5)
+}
+.element-icon-box h3{
+    font-family: "Outfit", Sans-serif;
+    font-size: 16px;
+    color:#EBEBEB ;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.element-icon-box p{
+    color: #FFFFFF;
+    font-family: "Outfit", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#smalldiv-5 {
+    #limited-time-heading{
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: "Poppins", Sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #FFFFFF;
+        text-align: left;
+    }
+}
+
+/* Button Styles for .button-orange-5 */
+.button-orange-5 {
+    position: relative;
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensures the light effect stays within the button */
+  }
+  
+  .button-orange-5 button {
+    background-color: #E85D33;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 28px;
+    font-weight: 700; /* Increased font-weight */
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%; /* Full width of parent div */
+    height: 100px; /* Adjust as needed */
+    position: relative;
+    animation: shakeEffect 1s ease-in-out infinite, pulseEffect 2s ease infinite, animatedgradient 3s ease infinite alternate;
+    background: linear-gradient(45deg, #FF8C00, #E85D33, #FF6347); /* Default gradient */
+    background-size: 400% 400%; /* Makes the gradient large enough to animate */
+  }
+  
+  /* Continuous to and fro animation */
+  @keyframes shakeEffect {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Light pulse effect */
+  @keyframes pulseEffect {
+    0% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  /* Animated gradient effect */
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Create the ray effect */
+  @keyframes rayEffect {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Bright Ray effect on button */
+  .button-orange-5 button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Bright white ray color */
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    animation: rayEffect 1s ease-in-out infinite; /* Reduced the duration for faster motion */
+    z-index: 1;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+  }
+  
+  /* Anchor and text styling */
+  .button-orange-5 a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100%; /* Make anchor take full height of the button */
+  }
+  
+  #button-orange-text-5 {
+    color: inherit;
+    text-align: center; /* Ensures text is centered */
+  }
+  
+#limited-seat-5{
+    margin-top:0;
+    margin-bottom: 0;
+    font-family: "Mukta", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+}

@@ -1,0 +1,281 @@
+
+*{    padding: 0;
+    margin: 0;
+    color: white;
+}
+.bigdiv-8{
+  margin: 0;
+  background-color: chocolate;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.smalldiv-8{
+  background-color: black;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+#content1-8{
+  background-color:darkseagreen;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+#content2-8{
+  background-color:darkblue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#content-1-8 p{
+  color: #DEDEDE;
+    font-family: "Outfit", Sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+}
+#content2-8{
+  #img-8{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+
+  }
+}
+.text-white-8 {
+  color: white;
+}
+
+.text-yellow-8 {
+  color: #FFE789;
+}
+#content1-8{
+  #head1-8{
+    text-transform: capitalize;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 42px;
+    font-weight: 700px;
+    text-align: left;
+    padding: 10 20 10 10px;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+}
+#head2-8{
+  display: inline-block;
+  font-size: 18px ;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 29px;
+  text-align: left;
+  color: brown;
+  margin: 0;
+  padding: 0;
+  /* color: #e0e0e0; */
+}
+
+.time-8{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ele-small-8{
+  display: inline-block;
+  color: white;
+}
+.ele-container-8{
+  background-color: crimson;
+}
+
+.ele-small-8 p {
+    color: #DCDCDC;
+  }
+#content1-8 #para-8{
+  font-size: 16px;
+  color: black;
+  /* color: #B2B2B2; */
+    font-family: "Outfit", Sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    padding: 5px;
+}
+
+#content2-8{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.count-time-8{
+  height:35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left:10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: transparent;
+    text-align: center;
+    background-image: linear-gradient(180deg, #F4F1DE 0%, #FFE7A9 100%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #845F0B;
+    border-radius: 100px
+}
+.num-8{
+  color: #000000;
+  font-family: "Roboto Slab", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.alpa-8{
+  color: #6D6D6D;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+#cont-2last-heading-8{
+  font-family: "Mukta", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Styles for .button-orange-8 */
+.button-orange-8 {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 100px; /* Height from the original code */
+  overflow: hidden; /* Ensures the light effect stays within the button */
+}
+
+.button-orange-8 button {
+  background-color: #E85D33;
+  font-family: "Bricolage Grotesque", Sans-serif;
+  font-size: 28px;
+  font-weight: 500; /* Font-weight as per your original code */
+  border-radius: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%; /* Full width of parent div */
+  height: 100%;
+  position: relative;
+  animation: shakeEffect 1s ease-in-out infinite, pulseEffect 2s ease infinite, animatedgradient 3s ease infinite alternate;
+  background: linear-gradient(45deg, #FF8C00, #E85D33, #FF6347); /* Default gradient */
+  background-size: 400% 400%; /* Makes the gradient large enough to animate */
+}
+
+/* Continuous to and fro animation */
+@keyframes shakeEffect {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+/* Light pulse effect */
+@keyframes pulseEffect {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Animated gradient effect */
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Create the ray effect */
+@keyframes rayEffect {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    opacity: 0.8;
+  }
+}
+
+/* Bright Ray effect on button */
+.button-orange-8 button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Bright white ray color */
+  transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  animation: rayEffect 1s ease-in-out infinite; /* Reduced the duration for faster motion */
+  z-index: 1;
+  pointer-events: none; /* Ensure it doesn't block interactions */
+}
+
+/* Anchor and text styling */
+.button-orange-8 a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#button-orange-text-8 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center; /* Ensures text is centered */
+}
+
+#anchor-tag-8 {
+  text-align: center;
+  color: inherit;
+}
+
+

@@ -1,0 +1,211 @@
+#part-6{
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#main-div-6 {
+    width: 60%;
+    background-color: teal;
+    display: flex;
+    flex-direction: column; /* Stacking elements vertically */
+    justify-content: center; /* Vertically center items inside */
+    align-items: center; /* Horizontally center items inside */
+    align-self: center;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 18px;
+}
+
+#small-div-6{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#content-6-one{
+    display: flex;
+    flex-direction: column;
+    background-color:firebrick;
+    margin: 0;
+    padding: 10px;
+    max-width: 50%;
+    gap: 20px;
+}
+#content-6-one img{
+    max-width: 100%;
+    max-height: 350px;
+    margin-bottom: 29px;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    #small-div-6{
+        flex-direction: column;
+    }
+    }
+#content-6-two{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    max-width: 50%;
+    margin: 0;
+    padding: 10px;
+    gap: 20px;
+}
+#content-6-two-heading{
+    margin: 0;
+    padding: 0;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 50px;
+    color: #000000;
+}
+#content-6-two-heading span{
+    color: blueviolet;
+}
+.video-6{
+    display: flex;
+    gap: 20px;
+}
+.video-6 video{
+    height: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(156, 156, 156, 0.5);
+    padding: 2px;
+}
+#youtube-video{
+    background-color: #8e8e8e;
+    border: 1px solid #424242;
+    border-radius: 5px;
+    width:100%;
+    height:250px;
+    background-size: cover;
+}
+
+/* Button Styles for .button-orange-6 */
+.button-orange-6 {
+    display: flex;
+    width: 100%; /* Full width */
+    height: 90px; /* Height from the original code */
+    overflow: hidden; /* Ensures the light effect stays within the button */
+    width: 100%; /* Ensure button takes full width */
+    justify-content: center; /* Center the button text inside */
+    align-items: center; /* Center the button content vertically */
+}
+  
+  .button-orange-6 button {
+    background-color: #E85D33;
+    font-family: "Bricolage Grotesque", Sans-serif;
+    font-size: 28px;
+    font-weight: 700; /* Increased font-weight */
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0;
+    width: 50%; /* Full width of parent div */
+    height: 100%; /* Full height of parent div */
+    animation: shakeEffect 1s ease-in-out infinite, pulseEffect 2s ease infinite, animatedgradient 3s ease infinite alternate;
+    background: linear-gradient(45deg, #FF8C00, #E85D33, #FF6347); /* Default gradient */
+    background-size: 400% 400%; /* Makes the gradient large enough to animate */
+  }
+  
+  /* Continuous to and fro animation */
+  @keyframes shakeEffect {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Light pulse effect */
+  @keyframes pulseEffect {
+    0% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  /* Animated gradient effect */
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Create the ray effect */
+  @keyframes rayEffect {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Bright Ray effect on button */
+  .button-orange-6 button::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Bright white ray color */
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    animation: rayEffect 1s ease-in-out infinite; /* Reduced the duration for faster motion */
+    z-index: 1;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+  }
+  
+  /* Anchor and text styling */
+  .button-orange-6 a {
+    text-decoration: none;
+  }
+  
+  #button-orange-text-6 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center; /* Ensures text is centered */
+  }
+  
+#limited-seat-6{
+    margin-top:10px;
+    margin-bottom: 0;
+    font-family: "Mukta", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+}
