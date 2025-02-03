@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-shrink: 1;
 }
 .slider-wrapper .image-list{
     display: grid;
@@ -19,6 +20,10 @@
     border-radius: 25px;
     margin-bottom: 15px;
 }
+#image-slider-main-div h2{
+    display: flex;
+    flex-shrink: 2;
+}
 #image-slider-main-div{
     display: flex;
     flex-direction: column;
@@ -30,4 +35,22 @@
     margin: 0;
     padding-top:40px;
     padding-bottom: 40px;
+    flex-shrink: 1;
 }
+@media (max-width: 768px) {
+    .container{
+    max-width: 675px;
+    flex-shrink: 1;
+    }
+    .slider-wrapper .image-list .image-item{
+        flex-shrink: 1;
+    }
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }

@@ -43,6 +43,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
+    flex-shrink: 1;
     justify-content: space-between; /* Distribute space evenly between items */
     gap: 20px; 
     flex-basis: auto;
@@ -55,11 +56,12 @@
     display: inline-block;
     padding: 10px;
     min-height: 100px;
-    width: 530px;
+    max-width: 530px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 .option{
     display: flex;
@@ -247,3 +249,10 @@
     color: inherit;
   }
   
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }

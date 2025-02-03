@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:60%;
+    max-width:60%;
     gap: 20px;
     flex-basis: auto;
     flex-grow: 0;
@@ -60,16 +60,19 @@
     justify-content: space-between; /* Distribute space evenly between items */
     gap: 10px; 
     height: 1140;
+    flex-shrink: 1;
     
 }
 .work-pillor4 .option4{
     background-color: white;
     display: inline-block;
     padding: 10px;
-    width: 530px;
+    max-width: 530px;
     border-radius: 5px;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .option4{
     display: flex;
@@ -116,7 +119,7 @@
     padding-bottom: 6px;
     padding-left: 12px;
     padding-right: 12px;
-    width: 100%; /* Full width of parent div */
+    max-width: 100%; /* Full width of parent div */
     height: 100%;
     position: relative;
     animation: shakeEffect 1s ease-in-out infinite, pulseEffect 2s ease infinite, animatedgradient 3s ease infinite alternate;
@@ -214,3 +217,11 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
